@@ -45,15 +45,12 @@ public class Main {
         for (int i = 0; i < word.length(); i++) {
             if (word.charAt(i) == letter.charAt(0)) {
                 stringBuilder.append(letter);
-            }
-            else if (wordMask.charAt(i) != ('_')) {
+            } else if (wordMask.charAt(i) != ('-')) {
                 stringBuilder.append(wordMask.charAt(i));
-            }
-            else {
-                stringBuilder.append('_');
+            } else {
+                stringBuilder.append('-');
             }
         }
             return stringBuilder.toString();
     }
-
 }
